@@ -10,8 +10,8 @@ public class EmailService {
     private final JavaMailSender mailSender;
 
     public EmailService(JavaMailSender mailSender) {
-        this.mailSender = mailSender;
-    }
+        this.mailSender = mailSender
+    
 
     public void sendPlainText(String to, String subject, String text) {
         SimpleMailMessage message = new SimpleMailMessage();
